@@ -1,4 +1,4 @@
-Implementation of the IFJ15 imperative language interpreter.
+Implementation of the IFJ15 language interpreter.
 --------
 Authors: Daniel Hladík, Klára Jánová
 
