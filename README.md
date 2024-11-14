@@ -1,5 +1,7 @@
 Implementation of the IFJ16 imperative language interpreter.
 --------
+Authors: Daniel Hladík, Klára Jánová
+
 Assignment:
 Create a C program that reads a source file written in IFJ16 and
 interprets it. If the interpreter runs without errors, the return value is
