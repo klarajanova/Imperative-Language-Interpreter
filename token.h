@@ -1,0 +1,66 @@
+#ifndef IFJ15_TOKEN_H
+#define IFJ15_TOKEN_H
+
+#define COL_START 0
+#define COL_END 1
+
+enum TOKEN {
+    ADDITION,
+    ASSIGNMENT,
+    COMMA,
+    DECREMENT,
+    DIVISION,
+    DOUBLE,
+    END_OF_FILE,
+    EQUAL,
+    FUNCTION_CONCAT,
+    FUNCTION_FIND,
+    FUNCTION_LENGTH,
+    FUNCTION_SORT,
+    FUNCTION_SUBSTR,
+    GREATER,
+    GREATER_OR_EQUAL,
+    IDENTIFIER,
+    INCREMENT,
+    INT,
+    ISTREAM,
+    KEYWORD,
+    KEYWORD_AUTO,
+    KEYWORD_BOOL,
+    KEYWORD_CIN,
+    KEYWORD_COUT,
+    KEYWORD_DO,
+    KEYWORD_DOUBLE,
+    KEYWORD_ELSE,
+    KEYWORD_FALSE,
+    KEYWORD_FOR,
+    KEYWORD_IF,
+    KEYWORD_INT,
+    KEYWORD_RETURN,
+    KEYWORD_STRING,
+    KEYWORD_TRUE,
+    KEYWORD_WHILE,
+    LEFT_BRACE,
+    LEFT_PARENTHESES,
+    LESS,
+    LESS_OR_EQUAL,
+    LOGICAL_NOT,
+    MULTIPLICATION,
+    NOT_EQUAL,
+    OSTREAM,
+    RIGHT_BRACE,
+    RIGHT_PARENTHESES,
+    SEMICOLON,
+    STRING,
+    SUBTRACTION
+};
+
+typedef struct {
+    int row;
+    int col[2];
+    enum TOKEN type;
+    char *data;
+    int term;
+} Token;
+
+#endif //IFJ15_TOKEN_H
